@@ -67,7 +67,7 @@ body {
                 flex-grow: 0;
                 padding: 1vw 2vw;
                 background-color: #b6039f;
-                border-radius: 20px;
+                border-radius: 1.5vw;
                 font-weight: 700;
                 font-size: 1.3vw;
                 width: 18vw;;
@@ -76,7 +76,7 @@ body {
 
     #section_2 {
         width: 100vw;
-        height: 100vh;
+        height: 80vh;
         background-image: url(./img/pain_points.png);
         background-position: center;
         background-size: cover;
@@ -86,6 +86,12 @@ body {
         gap: 9vw;
     }
 
+        #section_2 h3 {
+            font-size: 2vw;
+            text-align: left;
+            margin-top: 0;
+        }
+    
         #section_2 ul {
             display: flex;
             flex-direction: column;
@@ -93,13 +99,15 @@ body {
             margin-top: 3vw;
             margin-bottom: 3vw;
             gap: 2vw;
+            font-size: 1.1vw;
+            padding-left: 1.3vw;
         }
 
         #section_2 button {
             flex-grow: 0;
             padding: 1vw 2vw;
             background-color: #b6039f;
-            border-radius: 20px;
+            border-radius: 1.5vw;
             font-weight: 700;
             font-size: 1.3vw;
             width: 22vw;;
@@ -107,7 +115,7 @@ body {
 
     #section_3 {
         width: 100vw;
-        height: 100vh;
+        height: 75vh;
         background-image: url(./img/three_steps.png);
         background-position: center;
         background-size: cover;
@@ -120,30 +128,112 @@ body {
 
         #section_3 .content {
             display: flex;
-            gap: 5vw;
+            justify-content: center;
+            gap: 3vw;
         }
 
             #section_3 .content .box {
                 display: flex;
                 flex-direction: column;
-                width: 20vw;
-                height: 20vw;
+                width: 14vw;
+                height: 14vw;
                 border-style: solid;
                 border-color: whitesmoke;
-                border-radius: 40px;
+                border-radius: 4vw;
                 border-width: 1px;
                 align-items: center;
                 padding: 2vw;
+                background-color: rgba(0, 0, 0, 0.5);
             }
 
                 #section_3 .content .box h3 {
-                    font-size: 1.6vw;
+                    font-size: 1.1vw;
+                    font-weight: 700;
                     margin: 0;
                 }
 
                 #section_3 .content .box p {
                     text-align: center;
-                    font-size: 0.9vw;
+                    font-size: 0.7vw;
                     font-weight: 600;
                     line-height: 1.3vw;
                 }
+
+    #section_4 {
+        width: 100vw;
+        height: 75vh;
+        /*background-image: url(./img/three_steps.png);
+        background-position: center;
+        background-size: cover;*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5vw;
+    }
+
+        #section_4 h1 {
+            font-family: 'Bebas Neue';
+            font-size: 5vw;
+            margin-top: 10vw
+        }
+
+        #section_4 .scroll_container {
+            display: flex;
+            gap: 5vw;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+            overflow-x: auto;
+        }
+
+        #section_4 .scroll_container::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        #section_4 .scroll_container::-webkit-scrollbar-thumb {
+            background-color: #b6039f;
+            border-radius: 4px;
+        }
+
+        #section_4 .scroll_container::-webkit-scrollbar-thumb:hover {
+            background-color: #5f0052; /* Hover effect on the scrollbar */
+        }
+
+            #section_4 .box {
+                display: flex;
+                align-items: center;
+                padding: 2vw;
+                width: 30vw;
+                border-style: solid;
+                border-color: white;
+                border-radius: 2vw;
+                border-width: 0.1vw;
+                text-align: center;
+                gap: 2vw;
+                scroll-snap-align: start;
+            }
+
+                #section_4 .box .content {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                    #section_4 .box .content h3 {
+                        font-size: 2vw;
+                        margin-bottom: 0vw;
+                        margin-top: 0vw;
+                    }
+
+                    #section_4 .box .content h5 {
+                        margin-top: 0.3vw;
+                        margin-bottom: 0.3vw;
+                    }
+
+                    #section_4 .box .content p {
+                        margin-top: 1.5vw;
+                        font-weight: 400;
+                        font-size: 0.8vw;
+                    }
+

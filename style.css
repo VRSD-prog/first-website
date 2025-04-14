@@ -189,7 +189,7 @@ body {
             overflow-x: scroll;
             overflow-y: hidden;
             margin: 0 2vw;
-            padding-bottom: 2vw;
+            padding-bottom: 18vw;
             scrollbar-color: #b6039f;
         }
 
@@ -220,6 +220,7 @@ body {
                 align-items: center;
                 padding: 2vw;
                 width: 30vw;
+                height: 11vw;
                 border-style: solid;
                 border-color: white;
                 border-radius: 2vw;
